@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #1F2937;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1em;
+  width: 95%;
+}
+
+.text-color-green {
+  color: #4ADF86;
+}
+
+.button-container {
+  border-bottom: 1px solid #273549;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: .5em 1.3em;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1.7em;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #10B981;
+  color: inherit;
+}
+
+.title {
+  font-size: 2.5rem;
+  max-width: 350px;
+  margin-bottom: 0;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  color: #D5D4D8;
+  margin-top: .5em;
+}
+
+.generate-passwords {
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.generate-password {
+  background-color: #273549;
+  padding: 1.3em 2em;
+  margin-right: 1.5em;
+  width: 50%;
+  border-radius: 5px;
+  color: #55F991;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .generate-passwords {
+    flex-direction: column;
+  }
+}
