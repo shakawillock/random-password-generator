@@ -70,7 +70,16 @@ body {
 }
 
 @media (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+    max-width: 250px;
+  }
+
   .generate-passwords {
     flex-direction: column;
+  }
+
+  .generate-password {
+    min-width: 215px;
   }
 }
