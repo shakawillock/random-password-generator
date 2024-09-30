@@ -67,6 +67,7 @@ label {
   border-radius: 5px;
   border: none;
   margin-bottom: .5em;
+  min-width: 125px;
 }
 
 #feedback-message {
@@ -102,6 +103,7 @@ label {
 
   .generate-password {
     min-width: 215px;
+    width: 90%;
   }
 }
 
