@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
   width: 95%;
@@ -48,10 +48,30 @@ body {
   margin-bottom: 0;
 }
 
+.password-length-container {
+  margin-bottom: 1em;
+}
+
 .subheading {
   font-size: 1.25rem;
   color: #D5D4D8;
   margin-top: .5em;
+}
+
+label {
+  margin-right: .5em;
+}
+
+#password-length {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: .5em;
+}
+
+#feedback-message {
+  margin-top: 0;
+  color: #FF4C4C;
 }
 
 .generate-passwords {
@@ -67,9 +87,10 @@ body {
   border-radius: 5px;
   color: #55F991;
   text-align: center;
+  word-wrap: break-word;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   .title {
     font-size: 2rem;
     max-width: 250px;
@@ -81,5 +102,11 @@ body {
 
   .generate-password {
     min-width: 215px;
+  }
+}
+
+@media (max-width: 420px) {
+  #feedback-message {
+    max-width: 250px;
   }
 }
