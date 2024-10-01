@@ -75,6 +75,10 @@ label {
   margin-right: 0;
 }
 
+.input-wrapper {
+  margin-bottom: .5em;
+}
+
 #feedback-message {
   margin-top: 0;
   color: #FF4C4C;
