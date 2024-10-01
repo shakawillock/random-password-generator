@@ -48,7 +48,8 @@ body {
   margin-bottom: 0;
 }
 
-.password-length-container {
+.password-length-container,
+.checkbox-container {
   margin-bottom: 1em;
 }
 
@@ -68,6 +69,10 @@ label {
   border: none;
   margin-bottom: .5em;
   min-width: 125px;
+}
+
+.checkbox-container label {
+  margin-right: 0;
 }
 
 #feedback-message {
