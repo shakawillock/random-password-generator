@@ -6,15 +6,14 @@ const letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
 
-let passwordLengthEl = document.getElementById("password-length");
-let lettersEl = document.getElementById("letters");
-let numbersEl = document.getElementById("numbers");
-let symbolsEl= document.getElementById("symbols");
-
-let feedbackMessageEl = document.getElementById("feedback-message");
-let passwordOneEl = document.getElementById("generate-password-one");
-let passwordTwoEl = document.getElementById("generate-password-two");
-let buttonEl = document.getElementById("button-el");
+const passwordLengthEl = document.getElementById("password-length");
+const lettersEl = document.getElementById("letters");
+const numbersEl = document.getElementById("numbers");
+const symbolsEl= document.getElementById("symbols");
+const feedbackMessageEl = document.getElementById("feedback-message");
+const passwordOneEl = document.getElementById("generate-password-one");
+const passwordTwoEl = document.getElementById("generate-password-two");
+const buttonEl = document.getElementById("button-el");
 
 let randomPasswordOne = "";
 let randomPasswordTwo = "";
@@ -35,8 +34,8 @@ function checkPasswordLength() {
     if (passwordLengthEl.value === "" || passwordLengthEl.value < 8) {
         feedbackMessageEl.textContent = "Please enter a password length between 8 and 128"
     } else {
-        feedbackMessageEl.textContent = "";
         userInput = passwordLengthEl.value;
+        feedbackMessageEl.textContent = "";
     }
 }
 
@@ -45,19 +44,19 @@ function checkUserSelection() {
         userSelection = [];
     }
 
-    if (lettersEl.checked === true) {
+    if (lettersEl.checked) {
         for (let i = 0; i < letters.length;  i++) {
             userSelection.push(letters[i])
         }
     }
 
-    if (numbersEl.checked === true) {
+    if (numbersEl.checked) {
         for (let i = 0; i < numbers.length; i++) {
             userSelection.push(numbers[i]);
         }
     }
 
-    if (symbolsEl.checked === true) {
+    if (symbolsEl.checked) {
         for (let i = 0; i < symbols.length; i++) {
             userSelection.push(symbols[i]);
         }
